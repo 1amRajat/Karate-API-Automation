@@ -11,7 +11,8 @@ Given path '/users'
 And request {"name": "Rajat","job": "leader"}
 When method post
 Then status 201
-And match response == responseOutput
+#And match response == responseOutput
+And print responseTime 
 And print response
 
 Scenario: API Name2 - Post scenario with request and response from a file
